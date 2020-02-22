@@ -1,0 +1,123 @@
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-grid {
+    background-color: #FE2626;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    margin-bottom: 70px;
+    padding: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+.tabs-grid {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.header-tabs {
+    font-size: 15px;
+    width: fit-content;
+    margin: 0 5px;
+}
+
+.header-tabs:hover {
+    background-color: white;
+    height: 10px;
+    border: 1px white;
+    border-radius: 5px;
+    padding: 5px 5px 10px 5px;
+}
+
+.header-tabs__long {
+    font-size: 15px;
+    width: 130px;
+    margin: 0 5px;
+}
+
+.header-tabs__long:hover {
+    background-color: white;
+    height: 10px;
+    border: 1px white;
+    border-radius: 5px;
+    padding: 5px 5px 10px 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.welcome-heading {
+    margin-bottom: 50px;
+    font-size: 65px;
+}
+
+.rec-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.category-grid {
+    display: grid;
+}
+
+.categories-image {
+    width: 300px;
+    height: 275px;
+    border-radius: 5px;
+}
+
+.categories-label {
+    grid-row: 1;
+    font-size: 50px;
+    justify-self: center;
+}
+
+.registration-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-bottom: 70px;
+}
+
+.registration-btn a {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: #FE2626;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.registration-btn :hover {
+    background-color: white;
+    color: black;
+}
+
+.meetings-grid {
+    display: grid;
+    justify-content: center;;
+    margin-top: 100px;
+}
