@@ -158,6 +158,7 @@ h1 {
     display: grid;
     grid-template-columns: 150px 1fr;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .map {
