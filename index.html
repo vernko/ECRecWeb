@@ -7,7 +7,7 @@
 
     <body>
         <!-- nav grid for emery rec logo, links, golf course image -->
-        <div class="header-grid">
+        <div class="header-grid" id="myStickyHeader">
             <!-- grid emery rec logo -->
             <div>
                 <img class="logo" src="http://www.emerycounty.com/rec/images/shared%20border%202/shared%20border2_1x1.gif">
@@ -20,7 +20,7 @@
                     <div class="header-tabs">Programs</div>
                     <div class="header-tabs">Events</div>
                     <div class="header-tabs">Calendars</div>
-                    <div class="header-tabs__long">Parks & Recreation</div>
+                    <div class="header-tabs">Parks & Recreation</div>
                     <div class="header-tabs">Contact</div>
                     <div class="header-tabs">Employment</div>
                 </div>
@@ -233,5 +233,20 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myStickyHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
     </body>
 </html>

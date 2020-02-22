@@ -5,72 +5,68 @@ body {
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+}
+
 .header-grid {
     background-color: #FE2626;
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 50px 1fr;
     margin-bottom: 70px;
     padding: 15px;
 }
 
+.welcome-heading {
+    margin-bottom: 50px;
+    font-size: 65px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.sticky + .welcome-heading {
+    padding-top: 102px;
+  }
+
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     margin-left: 20px;
 }
 
 .nav-grid {
     display: grid;
-    grid-template-columns: 450px 1fr;
-    margin-right: 50px;
+    grid-template-columns: 150px 1fr;
+    /* margin-right: 50px; */
 }
 
 .tabs-grid {
     grid-column-start: 2;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr) 200px repeat(2, 1fr);
     justify-items: center;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .header-tabs {
-    font-size: 15px;
+    font-size: 20px;
     width: fit-content;
-    margin: 0 5px;
     color: white;
 }
 
 .header-tabs:hover {
     color: black;
     background-color: white;
-    height: 10px;
+    height: 15px;
     border: 1px white;
     border-radius: 5px;
     padding: 5px 5px 10px 5px;
-}
-
-.header-tabs__long {
-    font-size: 15px;
-    width: 130px;
-    margin: 0 5px;
-    color: white;
-}
-
-.header-tabs__long:hover {
-    color: black;
-    background-color: white;
-    height: 10px;
-    border: 1px white;
-    border-radius: 5px;
-    padding: 5px 5px 10px 5px;
-}
-
-h1 {
-    text-align: center;
-}
-
-.welcome-heading {
-    margin-bottom: 50px;
-    font-size: 65px;
 }
 
 .rec-categories-grid {
