@@ -1,6 +1,8 @@
 body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .header-grid {
@@ -8,17 +10,19 @@ body {
     display: grid;
     grid-template-columns: 170px 1fr;
     margin-bottom: 70px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo {
     width: 150px;
     height: 150px;
+    margin-left: 20px;
 }
 
 .nav-grid {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 450px 1fr;
+    margin-right: 50px;
 }
 
 .tabs-grid {
@@ -26,16 +30,17 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
-    align-items: center;
 }
 
 .header-tabs {
     font-size: 15px;
     width: fit-content;
     margin: 0 5px;
+    color: white;
 }
 
 .header-tabs:hover {
+    color: black;
     background-color: white;
     height: 10px;
     border: 1px white;
@@ -47,9 +52,11 @@ body {
     font-size: 15px;
     width: 130px;
     margin: 0 5px;
+    color: white;
 }
 
 .header-tabs__long:hover {
+    color: black;
     background-color: white;
     height: 10px;
     border: 1px white;
@@ -118,6 +125,44 @@ h1 {
 
 .meetings-grid {
     display: grid;
-    justify-content: center;;
+    justify-content: center;
     margin-top: 100px;
+}
+
+.meeting-category {
+    font-size: 45px;
+}
+
+.card-background {
+    width: 800px;
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.card-background:hover {
+    display: grid;
+    border: 1px solid black;
+    background-color: #fafafa;
+}
+
+.meeting-title {
+    color: blue;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    font-size: 25px;
+}
+
+.map {
+    border: 1px solid black;
+    width: 750px;
+    height: 400px;
+    margin: 0px 25px;
 }
